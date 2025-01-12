@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="icon" href="https://media.newyorker.com/photos/59712008097a6b51ed4d3bb0/master/w_2560%2Cc_limit/Petrusich-Chester-Bennington.jpg" type="image/x-icon"/>
+  </head>
+  <body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-100">
+    <section
+    class="flex flex-col container mx-auto bg-gray-200 p-4 rounded-lg shadow-md dark:bg-zinc-900"
+  >
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center p-4 border-b-2 border-gray-300 dark:border-gray-700"
+    >
+      <h1 class="text-3xl font-bold">Chester Bennington</h1>
+      <button
+        id="theme-toggle"
+        class="bg-gray-300 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-4 py-2 rounded-md transition"
+      >
+        Cambiar Tema
+      </button>
+    </header>
+
+    <!-- Nav -->
+    <div
+      class="flex items-center justify-center border-b-2 border-gray-300 dark:border-gray-700"
+    >
+      <nav class="flex justify-center gap-6 py-4">
+        <a href="index.html" class="hover:underline dark:hover:text-gray-400"
+          >Inicio</a
+        >
+        <a
+          href="biografia.html"
+          class="hover:underline dark:hover:text-gray-400"
+          >Biografía</a
+        >
+        <a href="legado.html" class="hover:underline dark:hover:text-gray-400"
+          >Legado</a
+        >
+        <a
+          href="galeria.html"
+          class="hover:underline dark:hover:text-gray-400"
+          >Galería</a
+        >
+        <a
+          href="contacto.html"
+          class="hover:underline dark:hover:text-gray-400"
+          >Contacto</a
+        >
+      </nav>
+    </div>
+      <main class="p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md mt-4">
+        <h1 class="text-2xl font-bold dark:text-gray-100">
+          Formulario de contacto
+        </h1>
+        <br />
+        <div class="flex flex-col">
+          <label for="">Introduce tu nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            required
+            class="w-1/2"
+          /><br />
+          <label for="">Introduce tus apellidos</label>
+          <input
+            type="text"
+            name="apellidos"
+            id="apellidos"
+            required
+            class="w-1/2"
+          /><br />
+          <label for="">Email para recibir una respuesta</label>
+          <input type="email" name="email" id="email" required class="w-1/2" />
+          <br />
+          <label for="">Escribe tu mensaje</label>
+          <textarea name="texto" id="texto" required></textarea>
+          <br />
+          <button id ="boton" type="submit" class="bg-gray-400 rounded w-1/2 p-2 self-center">Enviar</button>
+        </div>
+      </main>
+
+      <footer>
+        <p>CopyRight© 2024 Hecho por Cristian Fernández López</p>
+      </footer>
+    </section>
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>
